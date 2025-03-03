@@ -20,29 +20,33 @@ The initial template of the Vite+Vue project has integrated Vuex, VueRouter, Axi
 ## Common Commands
 
 - **Install:**
-    ```bash
-    npm install
-    ```
+
+  ```bash
+  npm install
+  ```
 
 - **Start up:**
-    ```bash
-    npm run dev
-    ```
+
+  ```bash
+  npm run dev
+  ```
 
 - **Compile:**
-    ```bash
-    npm run build
-    ```
+
+  ```bash
+  npm run build
+  ```
 
 - **Format code:**
-    ```bash
-    npm run format
-    ```
+
+  ```bash
+  npm run format
+  ```
 
 - **Production:**
-    ```bash
-    npm run prod
-    ```
+  ```bash
+  npm run prod
+  ```
 
 ## More Custom Configurations
 

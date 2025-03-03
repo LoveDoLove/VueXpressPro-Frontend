@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prod": "prettier --write . && vite build && vite preview --host",
     "build": "vite build",
-    "preview": "vite preview --host",
+    "preview": "npm run build && wrangler pages dev ./dist",
+    "deploy": "npm run build && wrangler pages deploy ./dist",
     "format": "prettier --write .",
     "serve": "serve dist -s -l 4173"
   },
@@ -44,10 +44,12 @@
     "eslint-plugin-vue": "^9.32.0",
     "less": "^4.2.2",
     "less-loader": "^12.2.0",
-    "prettier": "^3.5.2",
+    "prettier": "^3.5.3",
     "sass": "^1.85.1",
     "sass-loader": "^16.0.5",
     "serve": "^14.2.4",
-    "vite": "^6.2.0"
+    "vite": "^6.2.0",
+    "vite-plugin-vue-devtools": "^7.7.2",
+    "wrangler": "^3.111.0"
   }
 }
